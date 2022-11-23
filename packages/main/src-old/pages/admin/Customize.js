@@ -20,7 +20,7 @@ function Customize() {
         tab4="Statuses"
         tab5="Channel Prefixes"
         tab1Content={<Emoji />}
-        tab2Content={<Zuribot />}
+        // tab2Content={<Zuribot />}
         tab3Content={<WorkSpaceIconTab />}
         tab4Content={<Statuses />}
         tab5Content={<ChannelPrefixes />}
