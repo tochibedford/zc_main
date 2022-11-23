@@ -27,6 +27,7 @@ import {
 
 import TermsOfService from "../src-old/pages/termsOfService/index";
 import SettingsHome from "../src-old/pages/admin/Settings/components/SettingsHome.js";
+import Customize from "../src-old/pages/admin/Customize.js";
 import { useAuth } from "./auth/use-auth";
 
 const { Workspace, CreateWorkspace, ChooseWorkspace } = lazily(() =>
@@ -106,6 +107,9 @@ const App = () => (
           </ProtectedRoute>
           <ProtectedRoute exact path="/admin/settings">
             <SettingsHome />
+          </ProtectedRoute>
+          <ProtectedRoute exact path="/admin/settings/customize">
+            <Customize />
           </ProtectedRoute>
           <ProtectedRoute exact path="/choose-workspace">
             {withSuspense(ChooseWorkspace)}

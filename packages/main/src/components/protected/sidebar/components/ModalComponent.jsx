@@ -137,7 +137,7 @@ const ModalComponent = ({ workSpace, isOpen, toggleOpenInvite }) => {
         <div
           className={`d-flex align-items-center justify-content-between ${styles.popover}`}
         >
-          <p>
+          <p onClick={() => history.push("/admin/settings/customize")}>
             {t("modal_customize")} {workSpace?.name}*
           </p>
           {/* <div>
